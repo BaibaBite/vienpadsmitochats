@@ -8,4 +8,6 @@ var zina = document.querySelector("#zina");
 function sutitZinu(){
     console.log("Poga darbojas");
     console.log("ziņu ir: "+zina.value);
+
+    logs.innerHTML = logs.innerHTML +"</br>"+ zina.value;
 }
