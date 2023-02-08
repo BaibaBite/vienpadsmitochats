@@ -16,4 +16,8 @@ async function ieladetZinas(){
     let datiNoServera = await fetch("zinas.txt");
     let dati = await datiNoServera.text();
     console.log(dati);
+    logs.innerHTML = dati;
 }
+
+//reizi 1 sekundē izpilda funkciju ieladetZinas()
+setInterval(ieladetZinas, 1000)
